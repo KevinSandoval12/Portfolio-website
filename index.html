@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <script src="js/script.js" defer></script>
+    <!-- <link rel="stylesheet" href="css/page.css" /> -->
+    <title>Portfolio Website</title>
+  </head>
+
+  <!-- Logo/Nav Bar -->
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Kevin Sandoval</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <nav id="hamburger-nav">
+      <div class="logo">Kevin Sandoval</div>
+      <div>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="#project" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section -->
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          id="profile-img"
+          src="./img/logo-sqaure.jpg"
+          alt="Kevin Sandoval's Logo"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Kevin Sandoval</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn" id="pdf-btn">Download Resume PDF</button>
+          <button class="btn" onclick="location.href='#contact'">
+            Contact
+          </button>
+          <div id="socials-div">
+            <button id="socials">
+              <img
+                src="/img/linkedin.png"
+                alt="My LinkedIn Profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/in/kevinrsandoval/'"
+              />
+
+              <img
+                src="/img/github.png"
+                alt="My GitHub Profile"
+                class="icon"
+                onclick="location.href='https://github.com/KevinSandoval12'"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section_text">
+        <h2 class="title">About</h2>
+        <p class="section_text_p1">
+          I am a student pursuing a Bachelor of Applied Science in Software
+          Development with a understanding in data analytics and hands-on
+          experience building responsive web data-driven websites and Java
+          projects. Skilled in Java, SQL, JavaScript, and web technologies, I
+          apply agile practices such as sprints, pair programming, and
+          test-driven development to deliver reliable, maintainable code. As
+          well as my customer service background, I bring both technical
+          expertise and strong interpersonal skills to create solutions that are
+          functional, user-focused, and aligned with business goals.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="title">Skills</h2>
+      <ul id="contact-list">
+        <li class="section_text_p1">Object-Oriented Programming</li>
+        <li class="section_text_p1">Data Structures</li>
+        <li class="section_text_p1">
+          Languages: Java, PHP, SQL, JavaScript, HTML, CSS
+        </li>
+        <li class="section_text_p1">
+          Soft Skills: Communication, Collaborative problem solving.
+        </li>
+        <li class="section_text_p1">
+          Development Practice: Test-Driven Development, code documentation
+        </li>
+        <li class="section_text_p1">
+          Agile: Pair programming, Working in sprints
+        </li>
+      </ul>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+
+    <section id="work-experience">
+      <h2 class="title">Work Experience</h2>
+      <h2>Hostess/Service Partner</h2>
+      <p class="section-p">Red Robin</p>
+      <ul class="work-list">
+        <li>
+          Delivered attentive guest service by greeting, seating, and assisting
+          customers to ensure a positive dining experience
+        </li>
+        <li>
+          Handled takeout orders efficiently, ensuring accuracy and timely
+          pickup
+        </li>
+        <li>
+          Supported guests with special requests and accommodations, maintain a
+          welcoming environment
+        </li>
+      </ul>
+      <!-- First list: Client collaboration and agile development -->
+      <h2>Disc Golf Statistics Partner</h2>
+      <p class="section-p">Green River College</p>
+      <ul class="work-list">
+        <li>
+          Collaborated directly with clients to design and develop a responsive
+          website showcasing distance-based data visualizations tailored to the
+          stakeholder needs.
+        </li>
+        <li>
+          Worked with team documentation and communication, including
+          maintaining a centralized dev log, organizing sprint notes, and
+          uploading clear, detailed updates to our team.
+        </li>
+        <li>
+          Applied agile methodology in bi-weekly sprints to guide development,
+          regularly presented progress, prototypes, and revised ideas to
+          stakeholders for feedback.
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <div class="section_text">
+        <h2 class="title">Projects</h2>
+        <!-- ENTER PROJECTS WITH IMG AS WELL AS DESCRIPTIONS -->
+        <!-- ADD A 'SHOW ALL' BUTTON WHICH REDIRECTS YOU TO A NEW PAGE -->
+
+        <img
+          src="img/videogame-finder2.png"
+          alt="videogame finder project photo 2"
+        />
+        <br />
+        <p class="section_text_p1">
+          A Videogame Data Sorter than helps find games based on different
+          criteria
+        </p>
+
+        <button class="btn">Show All</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section_text">
+        <h2 class="title">Contact</h2>
+
+        <ul id="contact-list">
+          <li class="section_text_p1">
+            Phone Number: <br />
+            206-822-8614
+          </li>
+          <li class="section_text_p1">
+            Email: <br />
+            kevsandoval16@gmail.com
+          </li>
+          <li li class="section_text_p1">
+            LinkedIn: <br />
+            <a
+              href="https://www.linkedin.com/in/kevinrsandoval"
+              target="_blank"
+            >
+              www.linkedin.com/in/kevinrsandoval
+            </a>
+          </li>
+
+          <li class="section_text_p1">
+            GitHub: <br />
+            <a href="https://github.com/KevinSandoval12" target="_blank">
+              www.github.com/KevinSandoval12
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
