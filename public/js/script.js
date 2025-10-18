@@ -24,3 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open("https://github.com/KevinSandoval12", "_blank");
   });
 });
+
+// Form button
